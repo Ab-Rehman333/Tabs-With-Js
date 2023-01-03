@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aquamarine;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.Tabs {
+    background-color: bisque;
+    width: 550px;
+    border-radius: 1em;
+    height: auto;
+    min-width: auto;
+    min-height: 550px;
+}
+
+li {
+    list-style: none;
+}
+
+.for-tabs-title {
+    background-color: white;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+
+
+}
+
+.for-tabs-title>ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.for-tabs-title>ul>li {
+    font-size: 1.5em;
+    padding: 1rem;
+    font-family: cursive;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tabs-body {
+    padding: 1rem;
+    height: auto;
+}
+
+.tabs-body>h5 {
+    font-size: 2em;
+    font-family: cursive;
+
+}
+
+.tabs-body>p {
+    font-size: 2em;
+    font-family: cursive;
+    font-size: 1.2rem;
+    font-family: cursive;
+
+}
+
+.for-tabs-content .tabs-body {
+    display: none;
+}
+
+
+/* active classes */
+.for-tabs-title .active {
+    color: blue;
+    background-color: bisque;
+
+}
+
+.for-tabs-content .active {
+    display: block;
+}
